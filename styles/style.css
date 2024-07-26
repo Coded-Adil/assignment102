@@ -7,7 +7,31 @@
 }
 
 body{
+    background-color: #1111;
+}
+
+header{
     background-color: rgba(17, 17, 17, 1);
+}
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+.box-description{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 2rem;
+}
+
+.btn-red{
+    font-size: 1.25rem;
+    color: #FFFF;
+    font-weight: 700;
+    border-radius: 42px;
+    padding: 16px 48px;
+    background-color: #E6533C;
 }
 
 /* navbar style */
@@ -42,7 +66,7 @@ body{
     z-index: 1;
 }
 
-span{
+#span{
     position: absolute;
     width: 52px;
     height: 50%;
@@ -55,21 +79,21 @@ span{
 
 
 /* just a little animetion */
-.list-item:nth-child(1):hover~span
+.list-item:nth-child(1):hover~#span
 {
     left: 0;
 }
-.list-item:nth-child(2):hover~span
+.list-item:nth-child(2):hover~#span
 {
     left: 150px;
     width: 50px;
 }
-.list-item:nth-child(3):hover~span
+.list-item:nth-child(3):hover~#span
 {
     left: 305px;
     width: 55px;
 }
-.list-item:nth-child(4):hover~span
+.list-item:nth-child(4):hover~#span
 {
     left: 450px;
     width: 52px;
@@ -77,6 +101,44 @@ span{
 
 #nav-icon{
     display: none;
+}
+
+/* Banner section style */
+.banner-container{
+    margin: 30px 150px;
+    gap: 167px;
+    padding: 0px 20px;
+}
+
+.banner-text{
+    flex-direction: column;
+    gap: 28px;
+    line-height: 4.5rem;
+}
+
+.banner-title{
+    font-size: 4.90rem;
+    color: #FFFF;
+    margin-bottom: 0px;
+}
+
+.banner-btn{
+    gap: 14px;
+}
+
+#btn-basic{
+    font-size: 1.25rem;
+    color: #FFFF;
+    font-weight: 700;
+    border-radius: 42px;
+    padding: 16px 48px;
+    background-color: #1111;
+    border: 1px solid #FFFF;
+}
+
+#font{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
 }
 
 /* Mobile responsive style */
@@ -88,7 +150,7 @@ span{
     .list-container{
         display: none;
     }
-    
+
     #nav-icon{
         display: inline;
         color: #FFFF;
