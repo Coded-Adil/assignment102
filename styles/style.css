@@ -6,9 +6,6 @@
         "slnt" 0;
 }
 
-body {
-    background-color: #1111;
-}
 
 header {
     background-color: rgba(17, 17, 17, 1);
@@ -32,6 +29,11 @@ header {
     border-radius: 42px;
     padding: 16px 48px;
     background-color: #E6533C;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
 }
 
 /* navbar style */
@@ -200,6 +202,61 @@ header {
     display: none;
 }
 
+/* habit section */
+.habits{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+}
+
+.habit-text{
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+}
+
+.section-description{
+    font-size: 0.875rem;
+    margin: 0px;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.habit-image{
+    gap: 40px;
+}
+
+.habit-item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.habit-story{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.image-title{
+    margin: 0px;
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.image-description{
+    margin: 0px;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 20px;
+}
+
 /* Mobile responsive style */
 @media screen and (max-width: 576px) {
 
@@ -260,6 +317,11 @@ header {
 
     .empty i{
         display: inline;
+    }
+
+    /* habit section */
+    .habit-image{
+        flex-direction: column;
     }
 
 }
