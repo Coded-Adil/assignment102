@@ -261,6 +261,56 @@ section{
     line-height: 20px;
 }
 
+/* Work section */
+.work{
+    justify-content: center;
+    align-items: center;
+}
+.work_container{
+    border-radius: 18px;
+    justify-content: space-between;
+    margin: 100px 190px;
+    background-color: rgb(52 52 52 / 60%);
+    box-shadow: rgb(52 52 52 / 60%) 0px 0px 0px 20px;
+}
+.work_child{
+    width: 50%;
+}
+.work-text{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.btn-work{
+    width: 100%;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.work-image{
+    border-radius: 18px;
+    width: 366px;
+    height: 312px;    
+    justify-content: end;
+    align-items: center;
+}
+
+.work-image > img{
+    border-radius: 18px;
+    width: 366px;
+    height: 312px;
+    object-fit: none;
+    object-position: 66% 33%;
+    margin: 10px 10px 0px 10px;
+}
+
+.run-description{
+    line-height: 20px;
+    margin-top: 14px;
+}
 /* team section */
 .teams{
     flex-direction: column;
@@ -400,6 +450,53 @@ section{
     .habit-image{
         flex-direction: column;
     }
+
+    /* Work section */
+    .work_container{
+        flex-direction: column;
+        margin: 60px 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .work-text{
+        width: 100%;
+        margin: 20px;
+    }
+    .work-image{
+        justify-content: center;
+        align-items: center;
+    }
+    .work-image{
+        width: 350px;
+        height: 200px;
+    }
+    .work-image > img{
+        border-radius: 18px;
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0%;
+        margin: 0px;
+    }
+    .run-description{
+        margin-bottom: 20px;
+    }
+    .btn-work{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+        margin: 0px;
+    }
+    .btn-response-work{
+        max-height: 55px;
+        max-width: 100%;
+        margin: 0px;
+        padding: 16px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    
     /* teams section */
     .teams-image{
         grid-template-columns: repeat(1, 1fr);
