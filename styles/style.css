@@ -232,14 +232,13 @@ section{
 }
 
 .habit-image{
-    gap: 40px;
+    margin: 0px 190px;
 }
 
 .habit-item{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 25px;
 }
 
 .habit-story{
@@ -378,7 +377,55 @@ section{
     margin-bottom: 15px;
 }
 
+/* footer style */
+footer{
+    background-color: rgb(52 52 52 / 60%);
+}
 
+.gym-start{
+    margin: 60px 190px 60px 190px;
+    width: 50%;
+}
+
+#gym-name{
+    margin: 0px;
+    font-size: 4.375rem;
+}
+
+#lists-item{
+    margin-left: 0px;
+    display: flex;
+    gap: 85px;
+    justify-content: space-between;
+}
+
+.start-list{
+    list-style: none;
+}
+
+.list-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 39px;
+}
+
+.list-name{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    font-size: 1.437rem;
+}
+
+.start-copy{
+    margin: 60px 190px 60px 190px;    
+}
+
+.copyright{
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 35px;
+    margin: 0px;
+}
 
 /* Mobile responsive style */
 @media screen and (max-width: 576px) {
@@ -451,6 +498,10 @@ section{
         flex-direction: column;
     }
 
+    .habit-item{
+        margin-bottom: 40px;
+    }
+
     /* Work section */
     .work{
         margin: 20px;
@@ -503,5 +554,32 @@ section{
     /* teams section */
     .teams-image{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer section */
+    .start-copy, .gym-start{
+        margin: 0px;    
+    }
+
+    .gym-info{
+        flex-direction: column;
+    }
+    
+    .gym-start{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #lists-item{
+        gap: 20px;
+    }
+
+    .start-copy{
+        margin: 0px 20px;
+    }
+
+    .gym-text{
+        width: 80%;
+        margin: 44px 20px;
     }
 }
