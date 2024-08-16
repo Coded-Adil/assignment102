@@ -260,6 +260,62 @@ section{
     line-height: 20px;
 }
 
+/* Offer section */
+.offers{
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.eq{
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    border: 5px solid gray;
+}
+
+.offer-box{
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.offer-text{
+    margin: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    /* color: rgba(255, 255, 255, 0.5); */
+}
+.prime{
+    color: #E6533C;
+}
+.prize{
+    margin: 10px 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E6533C;
+}
+
+.offer-box:hover{
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.60);
+    color: #E6533C;
+    transition: .5s;
+}
+
+.box-1:hover{
+    border-radius: 16px;
+    transition: .5s;
+    background-color: #E6533C;
+}
+
+.box-1:hover .text-off{
+    color: white;
+    transition: .5s;
+}
+
 /* Work section */
 .work{
     justify-content: center;
@@ -578,6 +634,11 @@ footer{
 
     .habit-item{
         margin-bottom: 40px;
+    }
+
+    /* offer section */
+    .offers{
+        flex-direction: column;
     }
 
     /* Work section */
